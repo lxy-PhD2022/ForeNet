@@ -50,4 +50,4 @@ do
       --batch_size 32 \
       --learning_rate 0.0001 \
       >logs/LongForecasting/$model_name'_'$model_id_name'_'$seq_len'_'$pred_len.log 
-Done
+done

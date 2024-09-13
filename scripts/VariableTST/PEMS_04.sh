@@ -15,7 +15,7 @@ data_name=PEMS
 
 random_seed=2021
 
-for pred_len in 12 24 48 96
+for pred_len in 12
 do
     python -u run_longExp.py \
       --random_seed $random_seed \
@@ -50,7 +50,7 @@ do
       --batch_size 32 \
       --learning_rate 0.0001 \
       >logs/LongForecasting/$model_name'_'$model_id_name'_'$seq_len'_'$pred_len.log 
-Done
+done
 
 for pred_len in 24 
 do
@@ -87,7 +87,7 @@ do
       --batch_size 32 \
       --learning_rate 0.0001 \
       >logs/LongForecasting/$model_name'_'$model_id_name'_'$seq_len'_'$pred_len.log 
-Done
+done
 
 for pred_len in 48
 do

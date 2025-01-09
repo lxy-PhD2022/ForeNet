@@ -1,3 +1,7 @@
+Paper correction:
+ForeNet applies the Transformer encoder. The paper describes that its computational complexity is O(1), which refers to the operation of a single self-attention mechanism. Due to the parallelization of deep learning, each variable runs a self-attention mechanism. Therefore, the total computational complexity is O(N).
+
+
 Start :
 
 install pip env by requirements.txt
